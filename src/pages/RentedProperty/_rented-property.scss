@@ -1,0 +1,160 @@
+@use "../../assets/scss/abstracts/" as *;
+
+.rentedProperty {
+  display: grid;
+  justify-content: center;
+  gap: 1em;
+
+  h2 {
+    font-size: 0.875rem;
+    @include devices(tablet) {
+      font-size: 1rem;
+    }
+    @include devices(desktop) {
+      font-size: 1.125rem;
+    }
+  }
+  // .property-banner {
+  //   img {
+
+  //   }
+  // }
+
+  .info-container {
+    @include devices(desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .property-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+    @include devices(desktop) {
+      margin-bottom: 1.5em;
+    }
+
+    h1 {
+      color: $primary;
+      font-size: 1.125rem;
+
+      @include devices(tablet) {
+        font-size: 1.125rem;
+      }
+      @include devices(desktop) {
+        font-size: 2.25rem;
+      }
+    }
+
+    h2 {
+      color: $primary;
+      margin-bottom: 0.625em;
+      @include devices(tablet) {
+        font-size: 1rem;
+      }
+      @include devices(desktop) {
+        font-size: 1.25rem;
+      }
+    }
+
+    .property-location {
+      color: $primary;
+    }
+
+    .tag {
+      padding: 0.375em 1.875em;
+      color: $lightest;
+      background-color: $primary;
+      border-radius: 5px;
+      margin-right: 10px;
+      font-size: 0.625rem;
+
+      @include devices(tablet) {
+        font-size: 0.725rem;
+        border-radius: 10px;
+      }
+      @include devices(desktop) {
+        font-size: 0.875rem;
+        border-radius: 16px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .host-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include devices(tablet) {
+      justify-content: space-between;
+    }
+    @include devices(desktop) {
+      flex-direction: column-reverse;
+      justify-content: space-around;
+    }
+    .infos-profile {
+      display: flex;
+      align-items: center;
+
+      p {
+        color: $primary;
+        max-width: 90px;
+        margin-right: 0.625em;
+        text-align: right;
+        font-size: 0.75rem;
+
+        @include devices(tablet) {
+          font-size: 1rem;
+        }
+        @include devices(desktop) {
+          font-size: 1.125rem;
+        }
+      }
+
+      img {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        @include devices(tablet) {
+          width: 64px;
+          height: 64px;
+        }
+        @include devices(desktop) {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+  }
+
+  .property-description {
+    @include devices(tablet) {
+    }
+    @include devices(desktop) {
+      display: flex;
+      gap: 2em;
+    }
+    .accordion {
+      min-width: 45%;
+      .item {
+        .title {
+          h2 {
+            font-size: 0.813rem;
+
+            @include devices(tablet) {
+              font-size: 1rem;
+            }
+            @include devices(desktop) {
+              font-size: 1.125rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

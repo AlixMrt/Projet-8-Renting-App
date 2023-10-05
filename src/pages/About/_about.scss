@@ -1,0 +1,11 @@
+@use "../../assets/scss/abstracts/" as *;
+
+h2 {
+  font-size: 0.813rem;
+  @include devices(tablet) {
+    font-size: 1.125rem;
+  }
+  @include devices(desktop) {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+
+* {
+  font-weight: $fw-medium;
+  font-family: $font-primary;
+}
+
+h1 {
+  font-size: 1.5rem;
+  @include devices(tablet) {
+    font-size: 2.25rem;
+  }
+  @include devices(desktop) {
+    font-size: 3rem;
+  }
+}
+// h2 {
+//   font-size: 1.125rem;
+//   @include devices(tablet) {
+//     font-size: 1.625rem;
+//   }
+//   @include devices(desktop) {
+//     font-size: 2.25rem;
+//   }
+// }
+
+h3 {
+  font-size: 0.813rem;
+  @include devices(tablet) {
+    font-size: 1.125rem;
+  }
+  @include devices(desktop) {
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  font-size: 0.875rem;
+  @include devices(tablet) {
+    font-size: 1rem;
+  }
+  @include devices(desktop) {
+    font-size: 1.125rem;
+  }
+}

@@ -1,0 +1,12 @@
+@use "../../assets/scss/abstracts/" as *;
+
+.StarsContainer svg {
+  max-width: 98px;
+
+  @include devices(tablet) {
+    max-width: 150px;
+  }
+  @include devices(desktop) {
+    max-width: 196px;
+  }
+}

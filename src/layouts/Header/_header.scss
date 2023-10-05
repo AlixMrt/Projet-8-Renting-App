@@ -1,0 +1,39 @@
+@use "../../assets/scss/abstracts/" as *;
+
+.header {
+  max-width: 1240px;
+  background-color: $lightest;
+  color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+  margin-top: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    max-width: 40%;
+    @include devices(desktop) {
+      max-width: 30%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    .navlink {
+      color: $primary;
+      text-decoration: none;
+      margin-left: 2em;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
