@@ -6,16 +6,21 @@ import Accordion from "../../components/Accordion/Accordion";
 import Stars from "../../components/Stars/Stars";
 import Carousel from "../../components/Carousel/Carousel";
 
+import { useParams } from "react-router-dom";
+
 export default function RentedProperty() {
-  let property = properties[2];
+  const { id } = useParams().id;
+
+  let property = properties[id];
+
+  // Ici j'essaye de recuperer l'id du logement grace a useParams
+  // Cela ne fonctionne pas :
+
+  console.log({ id });
+  console.log(property);
 
   const equipmentsArray = property.equipments;
-  console.log(equipmentsArray);
-
   const descriptionText = property.description;
-
-  console.log(descriptionText);
-
   const tagsArray = property.tags;
 
   const Equipements = "Equipements";
