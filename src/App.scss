@@ -21,9 +21,9 @@
   min-height: 100vh;
   display: flex;
 
-  > *:not(#footer) {
-    overflow: hidden;
-    margin-top: 4%;
+  > *:not(footer) {
+    // overflow: hidden;
+
     margin-right: 4vw;
     margin-left: 4vw;
   }

@@ -9,15 +9,18 @@ import Carousel from "../../components/Carousel/Carousel";
 import { useParams } from "react-router-dom";
 
 export default function RentedProperty() {
-  const { id } = useParams().id;
+  const { id } = useParams();
 
-  let property = properties[id];
-
-  // Ici j'essaye de recuperer l'id du logement grace a useParams
-  // Cela ne fonctionne pas :
-
-  console.log({ id });
-  console.log(property);
+  function getIndex(value, arr, prop) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i][prop] === value) {
+        return i;
+      }
+    }
+    return -1;
+  }
+  const currIndex = getIndex(id, properties, "id");
+  const property = properties[currIndex];
 
   const equipmentsArray = property.equipments;
   const descriptionText = property.description;
