@@ -1,9 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import "./_card.scss";
 
-export default function Card(property) {
+export default function Card(props) {
   const { id } = useParams();
-  property = property.property;
+  let property = props.property;
   return (
     <Link
       to={`./rentedProperty/${property.id}`}

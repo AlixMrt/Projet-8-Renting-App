@@ -18,16 +18,7 @@ const router = createBrowserRouter(
       <Route
         path="rentedProperty/:id"
         element={<RentedProperty />}
-        // rajouter l'id ici rentedProperty:id
-        // refaire banner about + banner ... pour faire un seul composant
-        // attention a l'
-        // supprimer ancien accordeon
-
-        // enlever le dossier
-        // composant tag possible ?
-
-        // Revoir les location = location.location (partout)
-      />
+             />
       <Route path="*" element={<Error />} />
     </Route>
   )

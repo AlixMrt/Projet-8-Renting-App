@@ -3,10 +3,6 @@ import "./_accordion.scss";
 import { useState } from "react";
 
 export default function NewAccordion({ data, keyword, layoutOption }) {
-  console.log(data);
-  console.log(keyword);
-  console.log(layoutOption);
-
   const [isActive, setActive] = useState(false);
   const ToggleClass = () => {
     setActive(!isActive);

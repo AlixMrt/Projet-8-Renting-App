@@ -1,6 +1,7 @@
 import "./_about.scss";
 
-import BannerAbout from "../../components/Banner-about/Banner-about";
+// import BannerAbout from "../../components/Banner-about/Banner-about";
+import Banner from "../../components/Banner/Banner";
 
 import Accordion from "../../components/Accordion/Accordion";
 
@@ -14,7 +15,7 @@ const securiteText = dataAbout[3].description;
 export default function About() {
   return (
     <div className="about">
-      <BannerAbout />
+      <Banner backgroundImage="(../../assets/images/about_banner-img.png)" />
 
       <Accordion
         data={fiabiliteText}

@@ -5,8 +5,8 @@ export default function CardGallery(properties) {
   properties = properties.properties;
   return (
     <div className="cards-gallery">
-      {properties.map((property) => (
-        <Card property={property} />
+      {properties.map((property, index) => (
+        <Card property={property} key={index} />
       ))}
     </div>
   );

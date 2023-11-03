@@ -1,0 +1,21 @@
+.banner {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+  @include devices(tablet) {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  padding-left: 1.5em;
+  border-radius: 1em;
+  color: $lightest;
+  background-size: cover;
+  background-position: 20%;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.471);
+}
