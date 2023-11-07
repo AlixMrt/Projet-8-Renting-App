@@ -37,7 +37,7 @@ export default function SlideShow(props) {
           viewBox="0 0 24 25"
           fill="none"
         >
-          <g clip-path="url(#clip0_216464_257)">
+          <g clipPath="url(#clip0_216464_257)">
             <path
               d="M17.51 4.75064L15.74 2.98064L5.83995 12.8806L15.7399 22.7806L17.5099 21.0106L9.37995 12.8806L17.51 4.75064Z"
               fill="white"
@@ -63,7 +63,7 @@ export default function SlideShow(props) {
           viewBox="0 0 24 25"
           fill="none"
         >
-          <g clip-path="url(#clip0_216464_254)">
+          <g clipPath="url(#clip0_216464_254)">
             <path
               d="M6.48999 21.0106L8.25999 22.7806L18.16 12.8806L8.25999 2.98059L6.48999 4.75059L14.62 12.8806L6.48999 21.0106Z"
               fill="white"
