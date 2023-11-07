@@ -4,9 +4,15 @@
   margin: 0 auto;
   position: relative;
   max-height: 415px;
-  min-height: 255px;
   width: 100%;
   object-fit: cover;
+  height: 255px;
+  @include devices(tablet) {
+    height: 340px;
+  }
+  @include devices(tablet) {
+    height: 415px;
+  }
 
   .slide {
     width: 100%;
@@ -21,7 +27,7 @@
       font-size: 1rem;
       position: absolute;
       right: 50%;
-      top: 80%;
+      top: 90%;
       display: none;
       @include devices(tablet) {
         display: block;
@@ -33,8 +39,9 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    left: 32px;
-    font-size: 50px;
+    left: -15px;
+    width: 20%;
+    height: 20%;
     color: white;
     z-index: 1;
     cursor: pointer;
@@ -44,8 +51,9 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    right: 32px;
-    font-size: 50px;
+    right: -15px;
+    width: 20%;
+    height: 20%;
     color: white;
     z-index: 1;
     cursor: pointer;

@@ -1,21 +1,18 @@
+import "./_banner.scss";
+
 export default function Banner(props) {
   Banner.defaultProps = {
     firstText: "",
     secondText: "",
   };
 
-  let backgroundImageUrl = props.backgroundImage;
+  let backgroundImage = props.backgroundImage;
   let firstText = props.firstText;
   let secondText = props.secondText;
 
-  console.log(backgroundImageUrl);
-  console.log(firstText);
-  console.log(secondText);
-
-  const url = "url" + backgroundImageUrl;
-
   return (
-    <div className="banner" style={{ "backgroundImage": url }}>
+    <div className="banner">
+      <img src={backgroundImage} alt="background landscape" />
       <h1>
         {firstText}
         <span> {secondText}</span>

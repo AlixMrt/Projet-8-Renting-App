@@ -1,21 +1,68 @@
-.banner {
-  max-width: 1240px;
-  margin-left: auto;
-  margin-right: auto;
+@use "../../assets/scss/base/" as *;
+@use "../../assets/scss/abstracts/" as *;
 
-  padding-top: 1em;
-  padding-bottom: 1em;
+.banner {
+  position: relative;
+
+  display: flex;
+
+  border-radius: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.4em;
   @include devices(tablet) {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  @include devices(desktop) {
+    margin-top: 3em;
+    margin-bottom: 2.8em;
   }
 
-  padding-left: 1.5em;
-  border-radius: 1em;
-  color: $lightest;
-  background-size: cover;
-  background-position: 20%;
-  margin-top: 3em;
-  margin-bottom: 5em;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.471);
+  h1 {
+    justify-self: left;
+    align-self: center;
+    color: $lightest;
+    position: absolute;
+    font-size: 1.5rem;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    @include devices(desktop) {
+      padding-left: 0;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    @include devices(tablet) {
+      font-size: 2.25rem;
+    }
+    @include devices(desktop) {
+      font-size: 3rem;
+    }
+
+    & span {
+      display: block;
+
+      @include devices(tablet) {
+        display: inline;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 1240px;
+    object-fit: cover;
+    max-height: 110px;
+    filter: brightness(60%);
+
+    @include devices(tablet) {
+      max-height: 150px;
+    }
+    @include devices(desktop) {
+      max-height: 200px;
+    }
+  }
 }

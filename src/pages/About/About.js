@@ -1,10 +1,7 @@
 import "./_about.scss";
-
-// import BannerAbout from "../../components/Banner-about/Banner-about";
 import Banner from "../../components/Banner/Banner";
-
-import Accordion from "../../components/Accordion/Accordion";
-
+import HomeBackgroundImg from "../../assets/images/about_banner-img.png";
+import Collapse from "../../components/Collapse/Collapse";
 import dataAbout from "../../utils/dataAbout.json";
 
 const fiabiliteText = dataAbout[0].description;
@@ -15,16 +12,16 @@ const securiteText = dataAbout[3].description;
 export default function About() {
   return (
     <div className="about">
-      <Banner backgroundImage="(../../assets/images/about_banner-img.png)" />
+      <Banner backgroundImage={HomeBackgroundImg} />
 
-      <Accordion
+      <Collapse
         data={fiabiliteText}
         keyword={"Fiabilité"}
         layoutOption={"text"}
       />
-      <Accordion data={respectText} keyword={"Respect"} layoutOption={"text"} />
-      <Accordion data={serviceText} keyword={"Service"} layoutOption={"text"} />
-      <Accordion
+      <Collapse data={respectText} keyword={"Respect"} layoutOption={"text"} />
+      <Collapse data={serviceText} keyword={"Service"} layoutOption={"text"} />
+      <Collapse
         data={securiteText}
         keyword={"Sécurité"}
         layoutOption={"text"}

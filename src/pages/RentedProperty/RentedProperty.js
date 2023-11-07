@@ -1,10 +1,10 @@
 import "./_rented-property.scss";
 
 import properties from "../../utils/logements.json";
-import Accordion from "../../components/Accordion/Accordion";
+import Collapse from "../../components/Collapse/Collapse";
 
 import Stars from "../../components/Stars/Stars";
-import Carousel from "../../components/Carousel/Carousel";
+import SlideShow from "../../components/SlideShow/SlideShow";
 
 import { useParams } from "react-router-dom";
 
@@ -30,8 +30,7 @@ export default function RentedProperty() {
   const Description = "Description";
   return (
     <div className="rentedProperty">
-      <Carousel picturesArray={property.pictures} />
-
+      <SlideShow picturesArray={property.pictures} />
       <div className="info-container">
         <div className="property-info">
           <h1>{property.title}</h1>
@@ -61,12 +60,12 @@ export default function RentedProperty() {
       </div>
 
       <div className="property-description">
-        <Accordion
+        <Collapse
           data={equipmentsArray}
           keyword={Equipements}
           layoutOption={"list"}
         />
-        <Accordion
+        <Collapse
           data={descriptionText}
           keyword={Description}
           layoutOption={"text"}

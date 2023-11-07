@@ -1,7 +1,8 @@
 import "./_star.scss";
 
-const Stars = (rating) => {
-  rating = rating.rating;
+const Stars = (props) => {
+  let rating = props.rating;
+
   if (rating === "1") {
     return (
       <div className="StarsContainer">

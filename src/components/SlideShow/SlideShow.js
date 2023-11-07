@@ -1,13 +1,13 @@
 import { useState } from "react";
-import "./_carousel.scss";
+import "./_slide-show.scss";
 
-export default function Carousel(picturesArray) {
-  picturesArray = picturesArray.picturesArray;
+export default function SlideShow(props) {
+  let picturesArray = props.picturesArray;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   if (picturesArray.length < 2) {
     return (
-      <div className="carousel">
+      <div className="slide-show">
         <div
           className="slide"
           style={{ backgroundImage: `url(${picturesArray[currentIndex]})` }}
@@ -32,8 +32,8 @@ export default function Carousel(picturesArray) {
       <div className="left-arrow" onClick={goToPrevious}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="25"
+          width="100%"
+          height="100%"
           viewBox="0 0 24 25"
           fill="none"
         >
@@ -58,8 +58,8 @@ export default function Carousel(picturesArray) {
       <div className="right-arrow" onClick={goToNext}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="25"
+          width="100%"
+          height="100%"
           viewBox="0 0 24 25"
           fill="none"
         >

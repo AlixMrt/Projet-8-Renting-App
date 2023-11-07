@@ -1,0 +1,5 @@
+$horizontalMarginValue: 1.3em;
+@mixin horizontalMargins {
+  padding-left: $horizontalMarginValue;
+  padding-right: $horizontalMarginValue;
+}

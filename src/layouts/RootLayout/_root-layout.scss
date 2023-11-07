@@ -1,0 +1,14 @@
+@use "../../assets/scss/abstracts/" as *;
+@use "../../assets/scss/base/" as *;
+
+.root-layout {
+  // //   justify-content: center;
+  min-height: 100vh;
+
+  > *:not(footer) {
+    // overflow: hidden;
+
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+}
