@@ -28,7 +28,7 @@ export default function SlideShow(props) {
   };
 
   return (
-    <div className="carousel">
+    <div className="slide-show">
       <div className="left-arrow" onClick={goToPrevious}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
