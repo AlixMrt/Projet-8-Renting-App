@@ -1,8 +1,9 @@
 @use "../../assets/scss/abstracts/" as *;
 
 .header {
+  width: 92%;
   max-width: 1240px;
-  background-color: $lightest;
+
   color: $primary;
   display: flex;
   justify-content: space-between;
@@ -11,9 +12,9 @@
   margin-top: 1.2em;
 
   img {
-    max-width: 40%;
+    max-width: 30%;
     @include devices(desktop) {
-      max-width: 30%;
+      max-width: 40%;
     }
 
     &:hover {

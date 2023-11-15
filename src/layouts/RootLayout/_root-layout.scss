@@ -3,12 +3,26 @@
 
 .root-layout {
   // //   justify-content: center;
-  min-height: 100vh;
+  // min-height: 100vh;
+
+  // max-width: 1240px;
+
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // justify-content: center;
+  // align-content: center;
+  align-items: center;
 
   > *:not(footer) {
     // overflow: hidden;
-
     margin-right: 4vw;
     margin-left: 4vw;
+
+    // align-items: center;
+    // justify-items: center;
+    // justify-content: center;
+
+    // background-color: red;
   }
 }

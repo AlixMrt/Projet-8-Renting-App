@@ -4,8 +4,28 @@
   position: relative;
   text-align: center;
   margin-bottom: 1.25em;
+
   @include devices(desktop) {
     margin-bottom: 0;
+  }
+
+  &_overlay {
+    position: absolute;
+    background: linear-gradient(
+      hsla(0, 0%, 100%, 0) 50%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 1em;
+    @include devices(tablet) {
+      border-radius: 0.6em;
+    }
+    @include devices(desktop) {
+      border-radius: 0.4em;
+    }
   }
 
   h2 {
@@ -15,16 +35,20 @@
     bottom: 8px;
     left: 16px;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.2);
-    max-width: 90%;
     padding: 0.5em 1em;
   }
 
   .card-img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
     border-radius: 1em;
+    @include devices(tablet) {
+      border-radius: 0.6em;
+      height: 300px;
+    }
     @include devices(desktop) {
       border-radius: 0.4em;
-      object-fit: cover;
       width: 340px;
       height: 340px;
     }

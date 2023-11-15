@@ -6,6 +6,13 @@
   display: grid;
   gap: 1.25em;
 
+  @include devices(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $neutral;
+    border-radius: 1em;
+    padding: 35px;
+    gap: 35px 45px;
+  }
   @include devices(desktop) {
     grid-template-columns: repeat(3, 1fr);
     background-color: $neutral;

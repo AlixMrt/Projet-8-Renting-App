@@ -11,6 +11,7 @@ export default function Card(props) {
       key={property.id}
       property={property}
     >
+      <div className="card_overlay"></div>
       <h2>
         {property.title} {id}
       </h2>
