@@ -1,7 +1,5 @@
 # Projet 8 Kasa
 
-This project was bootstrapped with [Create React App].
-
 ## Description
 
 Dans ce projet réalisé lors de ma formation, j’ai développé le front-end d’une application de location de logement. L'application étant multi-pages, j'ai utilisé React pour travailler à partir d'un fichier de données JSON et React Router pour gérer la navigation dans le site et notamment avoir accès aux pages créées dynamiquement pour chaque logement. Enfin le travail de mise en page à partir de maquettes fournies a été géré globalement pour l'entièreté du site grâce à Sass.
