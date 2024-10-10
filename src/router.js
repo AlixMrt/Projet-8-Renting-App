@@ -12,7 +12,7 @@ import {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route basename="/Projet-8-Renting-App" element={<RootLayout />}>
+    <Route path="/Projet-8-Renting-App" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="rentedProperty/:id" element={<RentedProperty />} />
