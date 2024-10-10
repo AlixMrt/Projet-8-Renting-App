@@ -11,11 +11,11 @@
   @include devices(tablet) {
     justify-content: center;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
   }
   @include devices(desktop) {
     margin-top: 3em;
-    margin-bottom: 2.8em;
+    margin-bottom: 5.8em;
   }
 
   h1 {
