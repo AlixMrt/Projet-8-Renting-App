@@ -15,7 +15,12 @@ export default function Card(props) {
       <h2>
         {property.title} {id}
       </h2>
-      <img src={property.cover} className={"card-img"} alt="property" />
+      <img
+        src={property.cover}
+        className={"card-img"}
+        alt="property"
+        loading="lazy"
+      />
     </Link>
   );
 }
