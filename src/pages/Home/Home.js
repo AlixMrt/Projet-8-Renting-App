@@ -4,7 +4,7 @@ import properties from "../../utils/logements.json";
 
 import Banner from "../../components/Banner/Banner";
 import CardGallery from "../../components/CardsGallery/CardsGallery";
-import HomeBackgroundImg from "../../assets/images/home_banner-img.png";
+import HomeBackgroundImg from "../../assets/images/home_banner-img.webp";
 
 export default function Home() {
   return (
