@@ -1,4 +1,4 @@
-# Projet 8 Kasa
+# Projet 8 Kasa - Rental App
 
 ## Description
 
