@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Projet-8-Renting-App/static/css/main.d388e261.css",
+    "main.css": "/Projet-8-Renting-App/static/css/main.4a2e0b02.css",
     "main.js": "/Projet-8-Renting-App/static/js/main.fa59b808.js",
     "static/js/787.59774dd5.chunk.js": "/Projet-8-Renting-App/static/js/787.59774dd5.chunk.js",
     "static/media/home_banner-img.webp": "/Projet-8-Renting-App/static/media/home_banner-img.bd1491698a02e3ad2a6d.webp",
     "static/media/trying.webp": "/Projet-8-Renting-App/static/media/trying.054637fbeaedc87bc983.webp",
     "index.html": "/Projet-8-Renting-App/index.html",
-    "main.d388e261.css.map": "/Projet-8-Renting-App/static/css/main.d388e261.css.map",
+    "main.4a2e0b02.css.map": "/Projet-8-Renting-App/static/css/main.4a2e0b02.css.map",
     "main.fa59b808.js.map": "/Projet-8-Renting-App/static/js/main.fa59b808.js.map",
     "787.59774dd5.chunk.js.map": "/Projet-8-Renting-App/static/js/787.59774dd5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d388e261.css",
+    "static/css/main.4a2e0b02.css",
     "static/js/main.fa59b808.js"
   ]
 }
