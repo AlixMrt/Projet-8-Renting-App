@@ -12,7 +12,7 @@ export default function Header() {
       />
 
       <nav className="nav">
-        <NavLink className={"navlink"} to="/">
+        <NavLink className={"navlink"} to="/Projet-8-Renting-App">
           <h3> Accueil</h3>
         </NavLink>
         <NavLink className={"navlink"} to="about">
