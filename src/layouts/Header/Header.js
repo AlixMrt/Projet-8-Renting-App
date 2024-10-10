@@ -4,11 +4,13 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <header className="header">
-      <img
-        className="header-logo"
-        src={require("../../assets/logo/kasa_logo-primary.png")}
-        alt="logo"
-      />
+      <NavLink className={"navlink"} to="/">
+        <img
+          className="header-logo"
+          src={require("../../assets/logo/kasa_logo-primary.png")}
+          alt="logo"
+        />
+      </NavLink>
 
       <nav className="nav">
         <NavLink className={"navlink"} to="/">

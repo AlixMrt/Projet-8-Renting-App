@@ -18,13 +18,6 @@ export default function RentedProperty() {
       if (arr[i][prop] === value) {
         return i;
       }
-
-      // else {
-      // }
-
-      // return redirect("/error");
-      // faire un return sur la page d'erreur
-      // si l'id n'est pas trouve
     }
 
     console.log("invalid");
@@ -37,8 +30,6 @@ export default function RentedProperty() {
 
   if (currIndex === -1) {
     return <Error />;
-
-    console.log("this is the end");
   } else {
     const property = properties[currIndex];
 
