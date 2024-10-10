@@ -4,6 +4,11 @@
 .banner {
   position: relative;
   display: flex;
+  height: 200px;
+  max-width: 1240px;
+  background-color: $neutral;
+  margin-left: auto;
+  margin-right: auto;
 
   border-radius: 1em;
   margin-top: 1.5em;
@@ -56,6 +61,8 @@
     object-fit: cover;
     max-height: 110px;
     filter: brightness(60%);
+
+    margin: 0 auto;
 
     @include devices(tablet) {
       max-height: 150px;
